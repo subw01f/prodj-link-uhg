@@ -57,17 +57,17 @@ class PlayerWidget(QFrame):
 
     # metadata and player info
     self.labels["title"] = QLabel(self)
-    self.labels["title"].setStyleSheet("QLabel { color: white; font: bold 16pt; }")
+    self.labels["title"].setStyleSheet("QLabel { color: white; font: bold 16pt; display: none}")
     self.labels["title"].setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Fixed)
     self.labels["artist"] = QLabel(self)
     self.labels["artist"].setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Fixed)
-    self.labels["artist"].setStyleSheet("QLabel { color: white; }")
+    self.labels["artist"].setStyleSheet("QLabel { color: white; display: none }")
     self.labels["album"] = QLabel(self)
     self.labels["album"].setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Fixed)
-    self.labels["album"].setStyleSheet("QLabel { color: white; }")
+    self.labels["album"].setStyleSheet("QLabel { color: white; display: none}")
     self.labels["info"] = QLabel(self)
     self.labels["info"].setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Fixed)
-    self.labels["info"].setStyleSheet("QLabel { color: white; }")
+    self.labels["info"].setStyleSheet("QLabel { color: white; display: none}")
 
     # artwork and player number
     self.labels["player_number"] = QLabel(self)
@@ -82,10 +82,10 @@ class PlayerWidget(QFrame):
     # buttons below time/beat bar
     self.browse_button = QPushButton("BROWSE", self)
     self.browse_button.setFlat(True)
-    self.browse_button.setStyleSheet("QPushButton { color: white; font: 10px; background-color: black; padding: 1px; border-style: outset; border-radius: 2px; border-width: 1px; border-color: gray; }")
+    self.browse_button.setStyleSheet("QPushButton { display: none; color: white; font: 10px; background-color: black; padding: 1px; border-style: outset; border-radius: 2px; border-width: 1px; border-color: gray; }")
     self.download_button = QPushButton("DLOAD", self)
     self.download_button.setFlat(True)
-    self.download_button.setStyleSheet("QPushButton { color: white; font: 10px; background-color: black; padding: 1px; border-style: outset; border-radius: 2px; border-width: 1px; border-color: gray; }")
+    self.download_button.setStyleSheet("QPushButton { display: none; color: white; font: 10px; background-color: black; padding: 1px; border-style: outset; border-radius: 2px; border-width: 1px; border-color: gray; }")
 
     self.labels["play_state"] = QLabel(self)
     self.labels["play_state"].setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Fixed)
